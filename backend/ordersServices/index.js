@@ -14,7 +14,7 @@ router.get("/orders", (req, res) => {
     try {
       const orders = JSON.parse(data);
       const modifiedOrders = orders.orders.map((order, toplam) => {
-        const urunler = JSON.parse(order.products); // order.products string formatında ise
+        const urunler = JSON.parse(order.products); 
         const urunStockProd = urunler[0].stocklogs[0];
         console.log(urunler[0].id);
         const musteriBilgileri = JSON.parse(order.customer);

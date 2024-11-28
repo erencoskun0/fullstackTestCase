@@ -1,4 +1,3 @@
-import { Outlet } from "react-router";
 import Header from "../components/Header/Header";
 import Safe from "../components/Safe/Safe";
 import Tab from "../components/Tab/Tab";
